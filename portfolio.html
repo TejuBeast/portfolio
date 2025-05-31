@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add inside <head> -->
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div id="divone" class="toptaskbar">
+        <div class="name">Teju Beast</div>
+        <ul class="buttons">
+            <li><a href="portfolio.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+    </div>
+    <center>
+        <div class="quote">
+        "Be The Best And Beat The Best"
+        </div>
+    </div>
+    </center>
+
+</body>
+<style>
+    body{
+        margin: 0;
+      background-color: #ecdcbe; /* Page background color */
+      font-family: Arial, sans-serif;
+    }
+    .toptaskbar{
+        height: 100px;
+        width: 100%;
+        background-color:#44838b;
+        color: #F5DEB3;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        padding: 10px;
+    }
+    .buttons{
+        display: flex;
+        gap: 20px;
+        margin: 0;
+        padding:10px;
+        list-style: none;
+    }
+    .buttons li a{
+        color: #F5DEB3;
+        text-decoration: none;
+        font-family:'Rubik',sans-serif;
+        font-size: 1em;
+        padding: 5px;
+        
+    }
+    .name{
+        font-family: 'Playfair Display', serif;
+        font-size: 4em;
+    }
+    .quote{
+        height: 100px;
+        width:100%;
+        color:#44838b ;
+        font-family:'Rubik', serif; 
+        font-size: 3em;
+        padding-top: 20%;
+        opacity: 0; /* Start hidden */
+    animation: fadeIn 2s ease-in forwards; /* Fade in animation */
+    letter-spacing: 0.05em; /* Start with normal spacing */
+    transform: scale(0.8);  /* Start slightly smaller */
+    animation: quoteFadeZoom 10s ease-in forwards;
+    }
+    @keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+@keyframes quoteFadeZoom {
+    from {
+        opacity: 0;
+        letter-spacing: 0.05em;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        letter-spacing: 0.25em; /* Increase gap */
+        transform: scale(1.1);  /* Zoom in */
+    }
+}
+</style>
+</html>
